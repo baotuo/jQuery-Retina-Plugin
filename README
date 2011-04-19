@@ -1,0 +1,19 @@
+Usage:
+$().retina([settings]);
+
+  settings:
+  A set of key/value pairs. All settings are optional.
+  
+    retina-background (default: false)
+    Whether to change background image to high resolution.
+    
+    retina-suffix (default: @2x)
+    The suffix for high resolution image file.
+
+Example:
+<script src="jquery.retina.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+  $(".retina").retina({"retina-background":true});
+});
+</script>
